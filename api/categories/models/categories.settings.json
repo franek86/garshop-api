@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "categories",
   "info": {
-    "name": "categories"
+    "name": "categories",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -14,9 +15,10 @@
     "name": {
       "type": "string"
     },
-    "product": {
-      "model": "products",
-      "via": "categories"
+    "products": {
+      "collection": "products",
+      "via": "categories",
+      "dominant": true
     }
   }
 }
