@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "products",
   "info": {
-    "name": "products"
+    "name": "products",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -38,6 +39,13 @@
     "categories": {
       "via": "products",
       "collection": "categories"
+    },
+    "onSale": {
+      "type": "integer"
+    },
+    "brand": {
+      "model": "brands",
+      "via": "products"
     }
   }
 }
