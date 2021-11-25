@@ -47,14 +47,15 @@
       "model": "brands",
       "via": "products"
     },
-    "size": {
-      "type": "string"
-    },
     "material": {
       "type": "string"
     },
     "countryOfOrigin": {
       "type": "string"
+    },
+    "sizes": {
+      "collection": "size",
+      "via": "product"
     }
   }
 }
